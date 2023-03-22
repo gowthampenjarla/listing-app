@@ -1,0 +1,67 @@
+[
+  {
+    "_id": "64157e78d490dd676f76028c",
+    "index": 0,
+    "guid": "05f9b42a-ecca-4a31-ae8a-53698def4887",
+    "range": 450,
+    "age": 35,
+    "firstName": "Romero",
+    "surName": "Cohen",
+    "gender": "male",
+    "movein": "27-Mar-2023",
+    "phone": "(821) 498-3161",
+    "email": "romerocohen@comtract.com"
+  },
+  {
+    "_id": "64157e7896fd266e6a5abac9",
+    "index": 1,
+    "guid": "618775ba-dc21-40fe-bd1d-99b493257dfb",
+    "range": 400,
+    "age": 28,
+    "firstName": "Alejandra",
+    "surName": "Avila",
+    "gender": "female",
+    "movein": "06-Apr-2023",
+    "phone": "(910) 451-2166",
+    "email": "alejandraavila@comtract.com"
+  },
+  {
+    "_id": "64157e7821781462c892a1f5",
+    "index": 2,
+    "guid": "0d2f3602-0509-4e07-bd12-55dbcd2167ad",
+    "range": 350,
+    "age": 31,
+    "firstName": "Goodwin",
+    "surName": "Hammond",
+    "gender": "male",
+    "movein": "09-Apr-2023",
+    "phone": "(923) 452-3645",
+    "email": "goodwinhammond@comtract.com"
+  },
+  {
+    "_id": "64157e78f80fcb6b75fac51e",
+    "index": 3,
+    "guid": "4e951831-7bf7-4df2-8e79-59b864924968",
+    "range": 550,
+    "age": 35,
+    "firstName": "Francis",
+    "surName": "Stewart",
+    "gender": "female",
+    "movein": "17-May-2023",
+    "phone": "(966) 465-3809",
+    "email": "francisstewart@comtract.com"
+  },
+  {
+    "_id": "64157e7894ee9eaa545be51b",
+    "index": 4,
+    "guid": "8122d074-440e-4599-a655-6efea09b6ea6",
+    "range": 650,
+    "age": 30,
+    "firstName": "Corine",
+    "surName": "Wiley",
+    "gender": "female",
+    "movein": "21-May-2023",
+    "phone": "(882) 490-3507",
+    "email": "corinewiley@comtract.com"
+  }
+]

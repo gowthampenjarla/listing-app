@@ -1,0 +1,20 @@
+.footer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 2rem;
+}
+
+.flex50 {
+  flex: "50%";
+}
+
+.containerHeight {
+  height: 60vh;
+}
+
+.message {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  height: 70%;
+}

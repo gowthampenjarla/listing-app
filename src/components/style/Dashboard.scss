@@ -1,0 +1,37 @@
+#sidebar-wrapper {
+  min-height: 92vh !important;
+  // border-right: 1px solid black;
+  // border-top: 1px solid black;
+  padding-left: 0;
+  padding-right: 0;
+  box-shadow: 0 9px 0px 0px white, 0 -9px 0px 0px white,
+    12px 0 15px -4px rgba(31, 73, 125, 0.8),
+    -12px 0 15px -4px rgba(31, 73, 125, 0.8);
+  background: white;
+}
+
+#page-content-wrapper {
+  padding-left: 2rem !important;
+}
+
+.sidebar-menu-body {
+  padding-left: 0;
+  padding-right: 0;
+  padding-top: 0;
+}
+
+.sidebar-menu-nav:hover {
+  background-color: lightgray;
+}
+.sidebar-menu-nav:active {
+  background-color: grey;
+}
+.findButton {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.roommateSearch {
+  border: 1px solid;
+  border-radius: 2rem;
+}
