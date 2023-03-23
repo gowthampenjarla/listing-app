@@ -16,12 +16,12 @@ const Dashboard = (props) => {
   return (
     <>
       <Container fluid>
-        <Top />
+        {/* <Top /> */}
         <Row>
           <Col xs={2} id="sidebar-wrapper">
-            <SideBarAction />
+            <SideBarAction className="mt-5" />
           </Col>
-          <Col xs={10} id="page-content-wrapper">
+          <Col xs={10} id="page-content-wrapper" className="mt-4">
             <SearchBar />
             <Routes>
               <Route path="/" element={<HouseList />} />

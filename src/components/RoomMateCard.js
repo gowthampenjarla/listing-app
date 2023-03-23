@@ -6,7 +6,10 @@ const RoomMateCard = ({ roomMate }) => {
   const gender = roomMate.gender === "male" ? "male" : "female";
   return (
     <div>
-      <Card style={{ width: "95%", marginBottom: "2rem" }} className="shadow">
+      <Card
+        style={{ width: "95%", marginBottom: "2rem", borderRadius: "10px" }}
+        className="shadow"
+      >
         {/* <Card.Img variant="top" src="holder.js/100px180" /> */}
         <Card.Body>
           <Row>

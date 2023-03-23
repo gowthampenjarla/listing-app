@@ -8,7 +8,10 @@ const HouseCard = ({ house }) => {
   const navigate = useNavigate();
 
   return (
-    <Card style={{ width: "30rem", height: "26rem" }} className="mb-4 shadow">
+    <Card
+      style={{ width: "30rem", height: "26rem", borderRadius: "10px" }}
+      className="mb-4 shadow"
+    >
       <Card.Img
         variant="top"
         src={require(`../assets/images/${house.index}.jpg`)}

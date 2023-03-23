@@ -3,16 +3,18 @@ import Navbar from "react-bootstrap/Navbar";
 
 function Top() {
   return (
-    <Navbar>
-      <Container>
-        <Navbar.Brand href="/">Share your space</Navbar.Brand>
-        <Navbar.Toggle />
-        <Navbar.Collapse className="justify-content-end">
-          <Navbar.Text>
-            Signed in as: <a href="#login">John Doe</a>
-          </Navbar.Text>
-        </Navbar.Collapse>
-      </Container>
+    <Navbar className="" style={{ backgroundColor: "#20232a", color: "white" }}>
+      {/* <Container> */}
+      <Navbar.Brand href="/" className="ms-4 secondary">
+        Share your space
+      </Navbar.Brand>
+      <Navbar.Toggle />
+      <Navbar.Collapse className="justify-content-end me-4">
+        <Navbar.Text>
+          Signed in as: <a href="#login">John Doe</a>
+        </Navbar.Text>
+      </Navbar.Collapse>
+      {/* </Container> */}
     </Navbar>
   );
 }
