@@ -51,7 +51,7 @@ const SideBarAction = () => {
             </SidebarMenu.Sub.Toggle>
             <SidebarMenu.Sub.Collapse>
               <SidebarMenu.Nav>
-                <SidebarMenu.Nav.Link onClick={() => handleOnClick("/")}>
+                <SidebarMenu.Nav.Link onClick={() => handleOnClick("/single")}>
                   <SidebarMenu.Nav.Icon>
                     <PlusLg />
                   </SidebarMenu.Nav.Icon>
@@ -59,7 +59,9 @@ const SideBarAction = () => {
                 </SidebarMenu.Nav.Link>
               </SidebarMenu.Nav>
               <SidebarMenu.Nav>
-                <SidebarMenu.Nav.Link onClick={() => handleOnClick("/")}>
+                <SidebarMenu.Nav.Link
+                  onClick={() => handleOnClick("/apartment")}
+                >
                   <SidebarMenu.Nav.Icon>
                     <PlusLg />
                   </SidebarMenu.Nav.Icon>
@@ -67,7 +69,9 @@ const SideBarAction = () => {
                 </SidebarMenu.Nav.Link>
               </SidebarMenu.Nav>
               <SidebarMenu.Nav>
-                <SidebarMenu.Nav.Link onClick={() => handleOnClick("/")}>
+                <SidebarMenu.Nav.Link
+                  onClick={() => handleOnClick("/townhouse")}
+                >
                   <SidebarMenu.Nav.Icon>
                     <PlusLg />
                   </SidebarMenu.Nav.Icon>

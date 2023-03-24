@@ -10,7 +10,6 @@ import RoomMateFinder from "./RoomMateFinder.js";
 import SearchBar from "./SearchBar.js";
 import SideBarAction from "./SideBarAction.js";
 import "./style/Dashboard.scss";
-import Top from "./TopBar.js";
 
 const Dashboard = (props) => {
   return (
@@ -28,6 +27,15 @@ const Dashboard = (props) => {
               <Route
                 path="/bookmarks"
                 element={<HouseList isBookmark={true} />}
+              />
+              <Route path="/single" element={<HouseList type="single" />} />
+              <Route
+                path="/apartment"
+                element={<HouseList type="apartment" />}
+              />
+              <Route
+                path="/townhouse"
+                element={<HouseList type="townhouse" />}
               />
               <Route path="/listaplace" element={<PlaceListing />} />
               <Route path="/propertydetails" element={<PropertyDetails />} />

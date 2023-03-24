@@ -12,7 +12,7 @@ import HouseRating from "./HouseRating";
 const HouseCard = ({ house, isBookmark }) => {
   const navigate = useNavigate();
 
-  const randomNumber = Math.floor(Math.random() * 9);
+  // const randomNumber = Math.floor(Math.random() * 9);
 
   return (
     <Card
@@ -21,7 +21,7 @@ const HouseCard = ({ house, isBookmark }) => {
     >
       <Card.Img
         variant="top"
-        src={require(`../assets/images/${randomNumber}.jpg`)}
+        src={require(`../assets/images/${house.index}.jpg`)}
         style={{ width: "30rem", height: "15rem" }}
         onClick={() => navigate("/propertydetails", { state: house })}
       />
