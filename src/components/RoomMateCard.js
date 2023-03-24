@@ -1,6 +1,6 @@
 import React from "react";
 import { Button, Card, Col, Row } from "react-bootstrap";
-import { Bookmark } from "react-bootstrap-icons";
+import { Bookmark, EnvelopeFill, TelephoneFill } from "react-bootstrap-icons";
 
 const RoomMateCard = ({ roomMate }) => {
   const gender = roomMate.gender === "male" ? "male" : "female";
@@ -35,10 +35,9 @@ const RoomMateCard = ({ roomMate }) => {
                   <b>Move in by:</b> {roomMate.movein}
                 </div>
                 <div className="mt-3 d-flex justify-content-between">
-                  <Button variant="secondary">Contact</Button>
-                  <div>
-                    <Bookmark className="ml-4" />
-                  </div>
+                  <TelephoneFill size={25} />
+                  <EnvelopeFill size={25} />
+                  <Bookmark className="ml-4" size={25} />
                 </div>
               </Card.Text>
             </Col>
