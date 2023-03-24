@@ -25,6 +25,10 @@ const Dashboard = (props) => {
             <SearchBar />
             <Routes>
               <Route path="/" element={<HouseList />} />
+              <Route
+                path="/bookmarks"
+                element={<HouseList isBookmark={true} />}
+              />
               <Route path="/listaplace" element={<PlaceListing />} />
               <Route path="/propertydetails" element={<PropertyDetails />} />
               <Route path="/roommatefinder" element={<RoomMateFinder />} />

@@ -136,7 +136,6 @@ const PostRoomMateAd = () => {
             </Row>
           </Col>
         </Row>
-
         <Row className="mt-4">
           <Col xs={2}>
             <b>Shared Cleaning</b>
@@ -147,8 +146,16 @@ const PostRoomMateAd = () => {
               <Form.Check inline label="No" name="group2" type="radio" />
             </Form>
           </Col>
+        </Row>{" "}
+        <Row className="mt-4">
+          <Col xs={2}>
+            <b>Description</b>
+          </Col>
+          <Col xs={3}>
+            <Form.Control as="textarea" />
+          </Col>
         </Row>
-        <div className="findButton mt-4">
+        <div className="findButton mt-4 mb-4">
           <Button
             onClick={() =>
               navigate("/message", { state: POST_ROOMMATE_MESSAGE })

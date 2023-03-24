@@ -34,7 +34,7 @@ const SideBarAction = () => {
           </SidebarMenu.Nav.Link>
         </SidebarMenu.Nav>
         <SidebarMenu.Nav>
-          <SidebarMenu.Nav.Link href="/">
+          <SidebarMenu.Nav.Link onClick={() => handleOnClick("/bookmarks")}>
             <SidebarMenu.Nav.Icon>
               <Bookmark />
             </SidebarMenu.Nav.Icon>
@@ -51,7 +51,7 @@ const SideBarAction = () => {
             </SidebarMenu.Sub.Toggle>
             <SidebarMenu.Sub.Collapse>
               <SidebarMenu.Nav>
-                <SidebarMenu.Nav.Link href="/">
+                <SidebarMenu.Nav.Link onClick={() => handleOnClick("/")}>
                   <SidebarMenu.Nav.Icon>
                     <PlusLg />
                   </SidebarMenu.Nav.Icon>
@@ -59,7 +59,7 @@ const SideBarAction = () => {
                 </SidebarMenu.Nav.Link>
               </SidebarMenu.Nav>
               <SidebarMenu.Nav>
-                <SidebarMenu.Nav.Link href="/">
+                <SidebarMenu.Nav.Link onClick={() => handleOnClick("/")}>
                   <SidebarMenu.Nav.Icon>
                     <PlusLg />
                   </SidebarMenu.Nav.Icon>
@@ -67,7 +67,7 @@ const SideBarAction = () => {
                 </SidebarMenu.Nav.Link>
               </SidebarMenu.Nav>
               <SidebarMenu.Nav>
-                <SidebarMenu.Nav.Link href="/">
+                <SidebarMenu.Nav.Link onClick={() => handleOnClick("/")}>
                   <SidebarMenu.Nav.Icon>
                     <PlusLg />
                   </SidebarMenu.Nav.Icon>

@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { Button, Col, Form, Row } from "react-bootstrap";
 import { ArrowRight } from "react-bootstrap-icons";
 import RoomMateCard from "./RoomMateCard";
@@ -6,6 +6,7 @@ import roomMates from "../assets/data/roomMates.json";
 import "./style/Dashboard.scss";
 
 const RoomMateFinder = () => {
+  const [isFindEnabled, setisFindEnabled] = useState(false);
   return (
     <div>
       <h4>Looking for a roommate</h4>
@@ -168,17 +169,19 @@ const RoomMateFinder = () => {
             </Col>
           </Row>
           <div className="findButton mt-4">
-            <Button>
+            <Button onClick={() => setisFindEnabled(true)}>
               Find <ArrowRight />
             </Button>
           </div>
         </Col>
-        <Col xs={5} className="roommateSearch">
-          <h4 className="mt-3">Search results</h4>
-          {roomMates.map((rm) => (
-            <RoomMateCard key={rm.guid} roomMate={rm} />
-          ))}
-        </Col>
+        {isFindEnabled && (
+          <Col xs={5} className="roommateSearch">
+            <h4 className="mt-3">Search results</h4>
+            {roomMates.map((rm) => (
+              <RoomMateCard key={rm.guid} roomMate={rm} />
+            ))}
+          </Col>
+        )}
       </Row>
     </div>
   );
