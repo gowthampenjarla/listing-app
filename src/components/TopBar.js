@@ -3,7 +3,7 @@ import Navbar from "react-bootstrap/Navbar";
 
 function Top() {
   return (
-    <Navbar className="" style={{ backgroundColor: "#20232a", color: "white" }}>
+    <Navbar style={{ backgroundColor: "rgb(19, 47, 76)", color: "white" }}>
       {/* <Container> */}
       <Navbar.Brand href="/" className="ms-4 secondary">
         Share your space

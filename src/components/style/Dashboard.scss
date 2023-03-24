@@ -9,7 +9,7 @@
     -12px 0 15px -4px rgba(31, 73, 125, 0.8);
   // background: white;
   // border-top-right-radius: 10px;
-  background-color: #20232a;
+  background-color: rgb(19, 47, 76);
   color: white;
 }
 
@@ -24,10 +24,10 @@
 }
 
 .sidebar-menu-nav:hover {
-  background-color: lightgray;
+  background-color: rgba(51, 153, 255, 0.24);
 }
 .sidebar-menu-nav:active {
-  background-color: grey;
+  background-color: rgba(51, 153, 255, 0.24);
 }
 .findButton {
   display: flex;
