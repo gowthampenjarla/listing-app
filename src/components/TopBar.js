@@ -5,7 +5,10 @@ function Top() {
   return (
     <Navbar style={{ backgroundColor: "rgb(19, 47, 76)", color: "white" }}>
       {/* <Container> */}
-      <Navbar.Brand href="/" className="ms-4 secondary">
+      <Navbar.Brand
+        className="ms-4 secondary"
+        style={{ color: "rgb(102, 178, 255)" }}
+      >
         Share your space
       </Navbar.Brand>
       <Navbar.Toggle />

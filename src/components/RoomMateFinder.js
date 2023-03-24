@@ -7,6 +7,7 @@ import "./style/Dashboard.scss";
 
 const RoomMateFinder = () => {
   const [isFindEnabled, setisFindEnabled] = useState(false);
+  const [sliderValue, setSliderValue] = useState(0);
   return (
     <div>
       <h4>Looking for a roommate</h4>
@@ -34,9 +35,16 @@ const RoomMateFinder = () => {
               <b>Monthly Budget</b>
             </Col>
             <Col xs={5}>
-              <Form.Range min={0} max={2000} step={100} />
+              <Form.Range
+                min={0}
+                max={2000}
+                step={100}
+                value={sliderValue}
+                onChange={(e) => setSliderValue(e.target.value)}
+              />
               <div className="d-flex justify-content-between">
                 <div>$0</div>
+                {sliderValue}
                 <div>$2000</div>
               </div>
             </Col>
