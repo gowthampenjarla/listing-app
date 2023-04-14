@@ -7,21 +7,18 @@ import PlaceListing from "./placeListing/PlaceListing.js";
 import PostRoomMateAd from "./PostRoomMateAd.js";
 import PropertyDetails from "./PropertyDetails.js";
 import RoomMateFinder from "./RoomMateFinder.js";
-import SearchBar from "./SearchBar.js";
 import SideBarAction from "./SideBarAction.js";
 import "./style/Dashboard.scss";
 
-const Dashboard = (props) => {
+const Dashboard = () => {
   return (
     <>
       <Container fluid>
-        {/* <Top /> */}
         <Row>
           <Col xs={2} id="sidebar-wrapper">
             <SideBarAction className="mt-5" />
           </Col>
           <Col xs={10} id="page-content-wrapper" className="mt-4">
-            <SearchBar />
             <Routes>
               <Route path="/" element={<HouseList />} />
               <Route

@@ -9,6 +9,25 @@ import HouseRating from "./HouseRating";
 
 const FilterModal = (props) => {
   const ratingArr = [1, 2, 3, 4, 5];
+  const bedsArr = ["1", "2", "3", "4", "Any"];
+  const baths = [
+    { type: "one", dispVal: "1+" },
+    { type: "two", dispVal: "2+" },
+    { type: "three", dispVal: "3+" },
+    { type: "any", dispVal: "Any" },
+  ];
+  const amenitiies = [
+    "Heating",
+    "Furnished",
+    "Refrigator",
+    "Parking",
+    "Smart locks",
+    "Air Conditioning",
+    "Micorwave",
+    "Washer/Dryer",
+    "Balcony",
+  ];
+
   return (
     <div>
       <Modal {...props} aria-labelledby="contained-modal-title-vcenter">
@@ -30,12 +49,20 @@ const FilterModal = (props) => {
             <Row className="mt-4">
               <Col xs={3}>Beds</Col>
               <Col xs={5}>
-                <ButtonGroup className="me-2" aria-label="First group">
-                  <Button variant="secondary">1</Button>
-                  <Button variant="secondary">2</Button>
-                  <Button variant="secondary">3</Button>
-                  <Button variant="secondary">4</Button>
-                  <Button variant="secondary">Any</Button>
+                <ButtonGroup className="me-2" aria-label="First group" data>
+                  {bedsArr.map((bed) => (
+                    <>
+                      <input
+                        type="checkbox"
+                        class="btn-check"
+                        id={`btn-check-${bed}`}
+                        autocomplete="off"
+                      />
+                      <label class="btn btn-secondary" for={`btn-check-${bed}`}>
+                        {bed}
+                      </label>
+                    </>
+                  ))}
                 </ButtonGroup>
               </Col>
             </Row>
@@ -43,95 +70,32 @@ const FilterModal = (props) => {
               <Col xs={3}>Baths</Col>
               <Col xs={5}>
                 <ButtonGroup className="me-2" aria-label="First group">
-                  <Button variant="secondary">1+</Button>
-                  <Button variant="secondary">2+</Button>
-                  <Button variant="secondary">3+</Button>
-                  <Button variant="secondary">Any</Button>
+                  {baths.map((bath) => (
+                    <>
+                      <input
+                        type="checkbox"
+                        class="btn-check"
+                        id={`btn-check-${bath.type}`}
+                        autocomplete="off"
+                      />
+                      <label
+                        class="btn btn-secondary"
+                        for={`btn-check-${bath.type}`}
+                      >
+                        {bath.dispVal}
+                      </label>
+                    </>
+                  ))}
                 </ButtonGroup>
               </Col>
             </Row>
             <Row className="mt-4">
               <h6>Amenities</h6>
-              <Col xs={6}>
-                <Form.Check
-                  inline
-                  label="Heating"
-                  name="group2"
-                  type="checkbox"
-                />
-              </Col>
-              <Col xs={6}>
-                <Form.Check
-                  inline
-                  label="Furnished"
-                  name="group2"
-                  type="checkbox"
-                />
-              </Col>
-            </Row>
-            <Row className="mt-4">
-              <Col xs={6}>
-                <Form.Check
-                  inline
-                  label="Refrigator"
-                  name="group2"
-                  type="checkbox"
-                />
-              </Col>
-              <Col xs={6}>
-                <Form.Check
-                  inline
-                  label="Parking"
-                  name="group2"
-                  type="checkbox"
-                />
-              </Col>
-            </Row>
-            <Row className="mt-4">
-              <Col xs={6}>
-                <Form.Check
-                  inline
-                  label="Smart locks"
-                  name="group2"
-                  type="checkbox"
-                />
-              </Col>
-              <Col xs={6}>
-                <Form.Check
-                  inline
-                  label="Air Conditioning"
-                  name="group2"
-                  type="checkbox"
-                />
-              </Col>
-            </Row>
-            <Row className="mt-4">
-              <Col xs={6}>
-                <Form.Check
-                  inline
-                  label="Micorwave"
-                  name="group2"
-                  type="checkbox"
-                />
-              </Col>
-              <Col xs={6}>
-                <Form.Check
-                  inline
-                  label="Washer/Dryer"
-                  name="group2"
-                  type="checkbox"
-                />
-              </Col>
-            </Row>{" "}
-            <Row className="mt-4">
-              <Col xs={6}>
-                <Form.Check
-                  inline
-                  label="Balcony"
-                  name="group2"
-                  type="checkbox"
-                />
-              </Col>
+              {amenitiies.map((el) => (
+                <Col xs={6} className="mt-3">
+                  <Form.Check inline label={el} name="group2" type="checkbox" />
+                </Col>
+              ))}
             </Row>
             <Row className="mt-3">
               <h6>House Rating</h6>
