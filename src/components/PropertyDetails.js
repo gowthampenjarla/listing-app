@@ -1,7 +1,8 @@
 import React from "react";
-import { Col, Row } from "react-bootstrap";
+import { Button, Col, Row } from "react-bootstrap";
 import { useLocation } from "react-router-dom";
 import SimpleMap from "./SimpleMap";
+import { Envelope, Telephone } from "react-bootstrap-icons";
 
 const PropertyDetails = () => {
   const location = useLocation();
@@ -68,7 +69,7 @@ const PropertyDetails = () => {
         </Col>
       </Row>
       <Row className="mt-4">
-        <Col xs={4}>
+        <Col xs={5}>
           <h5>Details:</h5>
           <div className="mt-3">
             <b>Roommates Preferred:</b> Vegetarian, Non-Alcoholic, No Smoking,
@@ -97,6 +98,11 @@ const PropertyDetails = () => {
 
           <div className="mt-3 mb-5">
             <b>Property availability:</b> from 27-Mar-2023
+          </div>
+          <div className="mt-3 mb-4 d-flex justify-content-between">
+            <Telephone size={25} title="Phone" />
+            <Envelope size={25} title="E-mail" />
+            <Button variant="secondary">Request Tour</Button>
           </div>
         </Col>
       </Row>

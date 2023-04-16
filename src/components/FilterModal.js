@@ -10,12 +10,7 @@ import HouseRating from "./HouseRating";
 const FilterModal = (props) => {
   const ratingArr = [1, 2, 3, 4, 5];
   const bedsArr = ["1", "2", "3", "4", "Any"];
-  const baths = [
-    { type: "one", dispVal: "1+" },
-    { type: "two", dispVal: "2+" },
-    { type: "three", dispVal: "3+" },
-    { type: "any", dispVal: "Any" },
-  ];
+  const baths = ["1+", "2+", "3+", "Any"];
   const amenitiies = [
     "Heating",
     "Furnished",
@@ -75,14 +70,14 @@ const FilterModal = (props) => {
                       <input
                         type="checkbox"
                         class="btn-check"
-                        id={`btn-check-${bath.type}`}
+                        id={`btn-check-bath-${bath}`}
                         autocomplete="off"
                       />
                       <label
                         class="btn btn-secondary"
-                        for={`btn-check-${bath.type}`}
+                        for={`btn-check-bath-${bath}`}
                       >
-                        {bath.dispVal}
+                        {bath}
                       </label>
                     </>
                   ))}
